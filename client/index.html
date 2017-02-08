@@ -3,11 +3,78 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>{{name}}</title>
+<title>John Kneafsey</title>
 
-<link rel="stylesheet" href="css/{{name}}.{{version}}{{#production}}.min{{/production}}.css">
+<link href="assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Archivo+Narrow|Arimo|Cinzel|Denk+One|Francois+One|IM+Fell+Double+Pica+SC|Khand|Megrim|Playfair+Display+SC|Sansita|Signika|Unica+One" rel="stylesheet">
+<link rel='stylesheet prefetch' href='http:////netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'>
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
-<!-- Your HTML goes here -->
+<body>
+    <div class="container">
+        
+        <div id="topbar">
+            <p>Background  Projects  Skills  Contact</p>
+            <div class="social-media-icons">
+                <ul class="social-icons icon-circle list-unstyled list-inline icon-rotate"> 
+                    <li class="bigger-icon"> <a href="#"><i class="fa fa-github"></i></a></li> 
+                    <li> <a href="#"><i class="fa fa-google-plus"></i></a></li> 
+                    <li> <a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                    <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="top-banner" id="bannerimage">
+            <div class="name-tag">
+                <p class="name-tag-name">John Kneafsey</p>
+                <p class="name-tag-caption">Full stack software engineer living in Manhattan</p>           
+            </div>
+        </div>
+        <div id="page1">
+            <div class"page-content">
+                <span class="page-title">Tech Stack</span>
+                <div class="tech-list">
+                    <i class="devicon-bootstrap-plain-wordmark colored spaced"></i>
+                    <i class="devicon-git-plain-wordmark colored spaced bigger"></i>
+                    <i class="devicon-github-plain-wordmark spaced"></i>
+                    <i class="devicon-heroku-original-wordmark colored spaced"></i>
+                    <i class="devicon-html5-plain-wordmark colored spaced"></i>
+                    <br>
+                    <i class="devicon-javascript-plain colored spaced"></i>
+                    <i class="devicon-jquery-plain-wordmark colored spaced"></i>
+                    <i class="devicon-mongodb-plain-wordmark colored spaced"></i>
+                    <i class="devicon-nodejs-plain-wordmark colored spaced bigger"></i>
+                    <i class="devicon-postgresql-plain-wordmark colored spaced"></i>
+                    <i class="devicon-react-original-wordmark colored spaced"></i>
+                </div>
+            </div>    
+       </div>   
+    </div>    
+</body>
 
-<script src="js/{{name}}.{{version}}{{#production}}.min{{/production}}.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+<script>
+    $(window).scroll(function(){
+
+        $("#bannerimage").css("opacity", 1 - $(window).scrollTop() / 1000);
+    });
+</script>
+<script>
+    $(window).scroll(function(){
+
+        $("#topbar").css("opacity", $(window).scrollTop() / 1000);
+    });
+</script>
+<script>
+    $(window).scroll(function(){
+        console.log('ayyyy lmao')
+        $("#page1").css("opacity", $(window).scrollTop() / 1000);
+    });
+</script>
+<script src="js/thinkful-full-stack-template.0.0.1.js"></script>
+
+
+<!--
+        <img class="img-responsive" src="assets/img/Brooklyn-Bridge.jpg" alt=""> 
