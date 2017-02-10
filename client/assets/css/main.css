@@ -22,7 +22,7 @@ html, body {
 
 #topbar {
     width: 100%;
-    height: 80px;
+    height: 70px;
     background-color: black;
     background-size: 100%;
     background-size: cover;
@@ -35,12 +35,12 @@ html, body {
     opacity: 0;
     position: fixed;
     display: inline-block;
-    border-bottom-width: 13px;
-    border-bottom-color: darkgrey;
+    border-bottom-width: 3px;
+    border-bottom-color: white;
     border-bottom-style: solid;
     color: white;
     font-size: 24px;
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Cardo', serif;
     z-index: 1;
 }
 
@@ -51,17 +51,48 @@ html, body {
     height: 100vh;
     background-size: 100%;
     background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    padding: 0px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Cardo', serif;
+    opacity: 0.50;
+    z-index: 0;
+}
+
+#page2 {
+    width: 100%;
+    background-image: url(../img/water-skyline.jpg);  
+    height: 100vh;
+    background-size: 100%;
+    background-size: cover;
     background-position-x: 0%;
     background-position-y: 0%;
     background-clip: border-box;
     padding: 0px;
     text-align: center;
     font-size: 24px;
-    font-family: 'Old Standard TT', serif;
-    opacity: 0;
+    font-family: 'Cardo', serif;
+    opacity: 0.50;
     z-index: 0;
 }
 
+#page3 {
+    width: 100%;
+    background-image: url(../img/nyc-night-skyline-cut.jpg);  
+    height: 100vh;
+    background-size: 100%;
+    background-size: cover;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-clip: border-box;
+    padding: 0px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Cardo', serif;
+    z-index: 0;
+}
 .name-tag {
     position: absolute;
     top: 40%;
@@ -72,18 +103,16 @@ html, body {
 
 .name-tag-name {
     font-size: 90px;
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Cardo', serif;
     color: rgb(255,255,255);
     white-space: nowrap;
     margin: 0px;
     text-align: right;
-
- 
 }
 
 .name-tag-caption {
     font-size: 35px;
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Cardo', serif;
     color: rgb(255,255,255);
     white-space: nowrap;
     margin: 0px;
@@ -92,14 +121,14 @@ html, body {
 
 .social-media-icons {
     position: absolute;
-    top: 0%;
-    left: 92%;
-    transform: translate(-50%, -50%);
-    height: 20px;   
+    top: -1.8%;
+    right: 2%; 
     text-align: right;
     white-space: nowrap;
     position: fixed;
     z-index: 0;
+    margin-top: 0px;
+    padding-top:0px;
 }
 
 
@@ -113,15 +142,22 @@ body::-webkit-scrollbar {
     -webkit-margin-after:0em;
     font-size: 90px;
     color: white;
+    margin-top: 500px;
 }
 
 
 .tech-list {
-    font-size: 100px;
+    font-size: 85px;
+    position: absolute;
+    top: 116%;
+    left: 5%;
+
 }
 
 .spaced {
-    margin-left: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+    color: white;
 }
 
 
@@ -130,17 +166,409 @@ body::-webkit-scrollbar {
 }
 
 .page-content {
-    margin-top: 500px;
+    margin-top: 0px;
 }
 
 
-.bigger {
-    font-size: 150px !important;
+
+.page1-title {
+    font-size: 80px;
+    color: white;
 }
+
+
+.text-panel-black {
+    color: white;
+    background: black;
+    display: block;
+    font-family: 'Cardo', serif;
+    height: 50%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    right: 5%;
+    text-align: center;
+    top: 125%;
+    width: 450px;;
+    z-index: 0;
+}
+
+.panel-title {
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+}
+
+.panel-body {
+    
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 22px;
+}
+
+
+.page1-tech-list-title {
+    position: absolute;
+    left: 10%;
+    top: 115%;
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+
+}
+
+
+.menu-container {
+    display: inline-block; 
+    font-size: 20px;
+    text-align: left;
+    margin-left: 0px;
+    padding-left: 0px;
+    left: 2%;
+    top: 25%;
+
+    position: absolute;
+}
+
+.menu {
+    text-align: left;
+    margin-right: 30px;
+}
+
 
 .bigger-icon {
+    font-size: 2.0em !important;  
+
+}
+
+.page1-title {
+    color: white;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    right: 43%;
+    top: 163%;
+    font-size: 65px;    
+}
+
+.project1 {
+    color: white;
+    background: clear;
+    display: block;
+    font-family: 'Cardo', serif;
+    height: 30%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    left: 10%;
+    text-align: center;
+    top: 222%;
+    width: 270px;
+    z-index: 0;
+    border: solid;
+    border-width: 2px;
+    border-color: black
+}
+
+
+.project2 {
+    color: white;
+    background: clear;
+    display: block;
+    font-family: 'Cardo', serif;
+    height: 30%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    left: 31.5%;
+    text-align: center;
+    top: 222%;
+    width: 270px;
+    z-index: 0;
+    border: solid;
+    border-width: 2px;
+    border-color: black
+}
+
+.project3 {
+    color: white;
+    background: clear;
+    display: block;
+    font-family: 'Cardo', serif;
+    height: 30%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    right: 31.5%;
+    text-align: center;
+    top: 222%;
+    width: 270px;
+    z-index: 0;
+    border: solid;
+    border-width: 2px;
+    border-color: black
+}
+
+.project4 {
+    color: white;
+    background: clear;
+    display: block;
+    font-family: 'Cardo', serif;
+    height: 30%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    right: 10%;
+    text-align: center;
+    top: 222%;
+    width: 270px;
+    z-index: 0;    
+    border: solid;
+    border-width: 2px;
+    border-color: black
+}
+
+.project1-title {
+    color: black;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    left: 12.8%;
+    top: 213%;
     font-size: 30px;
 }
+
+.project2-title {
+    color: black;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    left: 36.0%;
+    top: 213%;
+    font-size: 30px;
+}
+
+.project3-title {
+    color: black;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    right: 36.5%;
+    top: 213%;
+    font-size: 30px;
+}
+
+.project4-title {
+    color: black;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    right: 15%;
+    top: 213%;
+    font-size: 30px;
+}
+
+
+.project1-links {
+    color: black;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    left: 12.5%;
+    top: 251%;
+    font-size: 20px;
+}
+
+.project2-links {
+    color: black;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    left: 34.0%;
+    top: 251%;
+    font-size: 20px;    
+}
+
+.project3-links {
+    color: black;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    right: 34.0%;
+    top: 251%;
+    font-size: 20px;   
+}
+
+.project4-links {
+    color: black;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    right: 12.5%;
+    top: 251%;
+    font-size: 20px;    
+}
+
+.page2-title {
+    color: white;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    right: 44.4%;
+    top: 268.3%;
+    font-size: 65px;    
+}
+
+
+
+.black-overlay {
+    background-color: rgba(0,0,0,1) !important;
+    z-index: 2 !important;
+    background-size: 100% !important;
+    background-size: cover !important;
+    background-position-x: 0% !important;
+    background-position-y: 0% !important;
+    background-clip: border-box !important;
+    height: 100vh !important;
+    width: 100% !important;
+}
+
+
+.page3-text-container {
+    color: white;
+    background-color: clear;   
+    display: block;
+    font-family: 'Cardo', serif;
+    height: 20%;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    left: 0%;
+    text-align: left;
+    top: 315%;
+    width: 1100px;;
+    z-index: 0;
+}
+
+.page3-title {
+    color: white;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: absolute;
+    right: 20%;
+    top: 330%;
+    font-size: 65px;    
+}
+
+
+
+
+
+
 
 
 
@@ -169,11 +597,12 @@ body::-webkit-scrollbar {
 	margin-bottom: 10px;
 }
 
-
 /*Change icons size here*/
 .social-icons .fa {
-	font-size: 1.8em;
+	font-size: 1.5em;
 }
+
+
 /*Change icons circle size and color here*/
 .social-icons .fa {
 	width: 50px;
